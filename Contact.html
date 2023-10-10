@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .contact-info .info {
+            flex-basis: 48%;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info .info h2 {
+            color: #333333;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        
+        .contact-info .info p {
+            color: #555555;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+        
+        .contact-form button {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #555555;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .contact-info .info {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="info">
+                <h2>Address</h2>
+                <p>123 Main Street, City, State, Zip Code</p>
+            </div>
+            <div class="info">
+                <h2>Phone</h2>
+                <p>123-456-7890</p>
+            </div>
+            <div class="info">
+                <h2>Email</h2>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
